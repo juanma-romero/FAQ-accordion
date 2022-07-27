@@ -1,0 +1,136 @@
+body {
+    background: linear-gradient( hsl(273, 75%, 66%) , hsl(240, 73%, 65%)  );
+    font-family: 'Kumbh Sans', sans-serif; 
+    
+}
+
+main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+        
+}
+
+.card {
+    border-radius: 20px;
+    height: 70vh;
+    width: 90%;    
+    background-color: white;  
+    margin-left: 5%;
+    margin-top: 30%; 
+    box-shadow: 0px 5px 15px 0px rgb(100, 99, 99); 
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+#pricipalImage {
+    width: 70%;
+    margin-top: -30%;
+    margin-bottom: 8%;
+    margin-left: 15%;
+}
+
+#shadow {
+    width: 70%;
+    margin-top: -37%;
+    margin-left: 15%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container .container-single {
+    position: relative;    
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+}
+
+hr {
+    width: 94%;    
+    border-top-color: hsl(240, 5%, 91%);    
+}
+
+.question {
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;    
+}
+
+.answer {    
+    display: none;
+    overflow: hidden; 
+    font-size: 12px;   
+}
+
+.flecha {
+    width: 15px; 
+    position: absolute;   
+    right: 0;
+    transform: rotate(180);
+}
+.question:hover {
+    color: hsl(14, 88%, 65%);
+}
+@media (min-width: 400px) and (max-width: 700px){
+    #shadow, #pricipalImage {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+@media (min-width: 701px) {
+    #shadow, #pricipalImage {
+        width: 110%; 
+        margin-left: -20%;             
+    }
+    .container .container-single {
+        padding: 0%;
+    }
+    .card {
+        width: 60%;
+        height: 70%;
+        margin-left: 20%;
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-evenly
+    }
+    #FAQContainer {
+        width: 47%;
+    }    
+    
+    #imageContainer {
+        width: 47%;  
+        margin-top: 20%;      
+    }
+
+    h1 {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1114px) {
+    body {
+        height: 55vw;        
+    }
+    h1 {
+        margin-top: 15%;
+    }
+    .question {
+        height: 1.5em;
+    }
+    hr {
+        width: 100%;    
+           
+    }
+}
